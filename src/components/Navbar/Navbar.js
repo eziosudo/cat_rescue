@@ -6,9 +6,9 @@ const Navbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-brand">
-        <img src={catLogo} className="navbar-logo" alt="Cat Rescue Logo" />
+        <img src={catLogo} className="navbar-logo" alt="Safe Paws Logo" />
         <div className="navbar-title">
-          <h1>Cat Rescue</h1>
+          <h1>Safe Paws</h1>
           <h2>流浪猫救助</h2>
         </div>
       </div>

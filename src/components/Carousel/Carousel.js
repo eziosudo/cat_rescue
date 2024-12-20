@@ -10,6 +10,9 @@ import luna from '../../assets/adopted/luna.jpeg';
 import miso from '../../assets/adopted/miso.jpeg';
 import oreo from '../../assets/adopted/oreo.jpg';
 import tom from '../../assets/adopted/tom.jpeg';
+import shandian from '../../assets/adopted/shandian.jpeg';
+import boots from '../../assets/adopted/boots.jpeg';
+import dayeAndNitro from '../../assets/adopted/daye_and_Nitro.jpeg';
 
 const adoptedCats = [
   {
@@ -36,6 +39,21 @@ const adoptedCats = [
     name: "Tom",
     image: tom,
     description: "Gentle Tom found his perfect match"
+  },
+  {
+    name: "闪电",
+    image: shandian,
+    description: ""
+  },
+  {
+    name: "boots",
+    image: boots,
+    description: ""
+  },
+  {
+    name: "dayeAndNitro",
+    image: dayeAndNitro,
+    description: ""
   }
 ];
 
@@ -68,7 +86,7 @@ function Carousel() {
 
   return (
     <div className="carousel-section">
-      <h2>已被领养的幸运儿</h2>
+      <h2>被领养的幸运儿</h2>
       <div className="carousel-container">
         <Slider {...settings}>
           {adoptedCats.map((cat, index) => (
