@@ -40,15 +40,37 @@
   gap: 2rem;
 }
 
-.navbar-links a {
+.navbar-brand a {
   text-decoration: none;
+  display: flex;
+  align-items: center;
+}
+
+.navbar-links a {
   color: #333;
-  font-size: 1rem;
-  transition: color 0.3s ease;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: all 0.3s;
+  position: relative;
 }
 
 .navbar-links a:hover {
-  color: #f4a460;
+  color: #4a90e2;
+}
+
+.navbar-links a.active {
+  color: #4a90e2;
+}
+
+.navbar-links a.active::after {
+  content: '';
+  position: absolute;
+  bottom: -2px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 2px;
+  background-color: #4a90e2;
 }
 
 .navbar-social {

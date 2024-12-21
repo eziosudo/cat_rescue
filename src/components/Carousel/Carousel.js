@@ -10,32 +10,50 @@ import luna from '../../assets/adopted/luna.jpeg';
 import miso from '../../assets/adopted/miso.jpeg';
 import oreo from '../../assets/adopted/oreo.jpg';
 import tom from '../../assets/adopted/tom.jpeg';
+import shandian from '../../assets/adopted/shandian.jpeg';
+import boots from '../../assets/adopted/boots.jpeg';
+import dayeAndNitro from '../../assets/adopted/daye_and_Nitro.jpeg';
 
 const adoptedCats = [
   {
     name: "Fuke & Maru",
     image: fukeAndMaru,
-    description: "A lovely bonded pair who found their forever home together"
+    description: "这对亲密的伙伴一起找到了温暖的新家"
   },
   {
     name: "Luna",
     image: luna,
-    description: "Sweet Luna bringing joy to her new family"
+    description: "甜美的Luna为新家庭带来欢乐"
   },
   {
     name: "Miso",
     image: miso,
-    description: "Playful Miso living her best life in her forever home"
+    description: "活泼的Miso在永远的家中过着幸福的生活"
   },
   {
     name: "Oreo",
     image: oreo,
-    description: "Charming Oreo enjoying his new loving family"
+    description: "可爱的Oreo在充满爱的新家庭中快乐成长"
   },
   {
     name: "Tom",
     image: tom,
-    description: "Gentle Tom found his perfect match"
+    description: "温和的Tom找到了最适合他的家"
+  },
+  {
+    name: "闪电",
+    image: shandian,
+    description: "活泼可爱的闪电在新家庭中快乐生活"
+  },
+  {
+    name: "Boots",
+    image: boots,
+    description: "温柔的Boots找到了他的温暖新家"
+  },
+  {
+    name: "Daye & Nitro",
+    image: dayeAndNitro,
+    description: "Daye和Nitro在新家庭中幸福相伴"
   }
 ];
 
@@ -68,7 +86,7 @@ function Carousel() {
 
   return (
     <div className="carousel-section">
-      <h2>已被领养的幸运儿</h2>
+      <h2>被领养的幸运儿</h2>
       <div className="carousel-container">
         <Slider {...settings}>
           {adoptedCats.map((cat, index) => (
