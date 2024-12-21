@@ -87,6 +87,7 @@ function Carousel() {
   return (
     <div className="carousel-section">
       <h2>被领养的幸运儿</h2>
+      <h2>被领养的幸运儿</h2>
       <div className="carousel-container">
         <Slider {...settings}>
           {adoptedCats.map((cat, index) => (
